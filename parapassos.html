@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Ubiqua</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, white, black);
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .topo {
+            display: flex;
+            align-items: flex-start;
+        
+        }
+
+        .imagem-logo {
+            width: 200px;
+        }
+
+        .botoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .botao-menu {
+            background-color: #010801;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .botao-menu:hover {
+            background-color: #333;
+        }
+
+        .linha-conteudo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .conteudo-abaixo, .conteudo-esquerda, .conteudo-direita {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 15px;
+            color: white;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .texto-lateral {
+            max-width: 400px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .imagem-final {
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .linha-conteudo {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagem-final, .imagem-logo {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        
+        <div class="topo">
+            <img class="imagem-logo" src="logo-light-transparent.png" alt="Logo Parapassos">
+        </div>
+
+   
+        <div class="botoes">
+            <button class="botao-menu">INICIO</button>
+            <button class="botao-menu">SERVIÇOS</button>
+            <button class="botao-menu">SOBRE</button>
+            <button class="botao-menu">BLOG</button>
+            <button class="botao-menu">CONTATO</button>
+        </div>
